@@ -20,4 +20,28 @@ A simple and efficient Task Management System built with **Spring Boot**, **Spri
 - Maven
 
 ## 📂 Project Structure
+src/
+└── main/
+├── java/
+│ └── com/taskmanagement/
+│ ├── controller/
+│ ├── service/
+│ ├── model/
+│ ├── repository/
+│ └── TaskManagementApplication.java
+└── resources/
+├── application.properties
+└── static/
 
+
+## 🔧 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/task-management-system.git
+   
+2. Open the project in your IDE.
+
+3. Configure your database in application.properties.
+
+4. Run the TaskManagementApplication.java file.
