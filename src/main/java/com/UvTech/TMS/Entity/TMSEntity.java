@@ -12,7 +12,7 @@ import jakarta.persistence.PrePersist;
 public class TMSEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long Id;
     private String title;
     private String description;
     private String status; // PENDING, COMPLETED
@@ -26,9 +26,9 @@ public class TMSEntity {
         }
     }
     
-	public TMSEntity(Long id, String title, String description, String status, LocalDate dueDate, String priority) {
+	public TMSEntity( String title, String description, String status, LocalDate dueDate, String priority) {
 		super();
-		this.id = id;
+		
 		this.title = title;
 		this.description = description;
 		this.status = status;
@@ -40,10 +40,10 @@ public class TMSEntity {
 		// TODO Auto-generated constructor stub
 	}
 	public Long getId() {
-		return id;
+		return Id;
 	}
 	public void setId(Long id) {
-		this.id = id;
+		this.Id = id;
 	}
 	public String getTitle() {
 		return title;
@@ -77,8 +77,14 @@ public class TMSEntity {
 	}
 	@Override
 	public String toString() {
-		return "TMSEntity [id=" + id + ", title=" + title + ", description=" + description + ", status=" + status
-				+ ", dueDate=" + dueDate + ", priority=" + priority + "]";
+		return "\n--- Task Details ---" +
+		           "\nID          : " + Id +
+		           "\nTitle       : " + title +
+		           "\nDescription : " + description +
+		           "\nStatus      : " + status +
+		           "\nDue Date    : " + dueDate +
+		           "\nPriority    : " + priority +
+		           "\n---------------------\n";
 	}
     
 

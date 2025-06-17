@@ -1,9 +1,0 @@
-```bash
-/target
-/.idea
-*.iml
-*.class
-*.log
-*.jar
-*.war
-.DS_Store
